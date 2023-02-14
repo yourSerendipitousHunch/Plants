@@ -1,5 +1,5 @@
 # Plants: 
-## Link ..
+## Link: https://yourserendipitoushunch.github.io/Plants/
 ***Landing Page for plants shop***
 
 ## All types of extensions are supported: computer, tablet and phone (adaptive layout)
