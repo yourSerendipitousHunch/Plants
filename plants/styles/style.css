@@ -1,0 +1,78 @@
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Inter:300,regular,700);
+@import url(https://fonts.googleapis.com/css?family=Inika:regular,700);
+@import url(header.css);
+@import url(welcome.css);
+@import url(about.css);
+@import url(service.css);
+@import url(prices.css);
+@import url(contacts.css);
+@import url(footer.css);
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Inter';
+  font-size: 20px;
+  color: #717171;
+  background-color: #EDF2EC;
+}
+[class*='-container'] {
+  max-width: 1220px;
+  margin: auto;
+  padding: 0px 35px;
+}
+button {
+  display: inline-block;
+  width: 162px;
+  height: 50px;
+  transition: 0.6s;
+  color: #E06733;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  font-family: 'Inika';
+  font-size: 20px;
+  line-height: 1.30; /* 26/20 */
+  cursor: pointer;
+}
+button:hover {
+  color: white;
+  background-color: #E06733;
+}
+a {
+  color: black;
+}
+a:hover {
+  font-weight: 700;
+  color: #E06733;
+}
+.images {
+  max-width: 100%;
+}
+.green-text {
+  color: #499A18;
+}
+.peach-text {
+  color: #E06733;
+}
+@media (max-width: 768px) {
+  [class*='-container'] {
+    max-width: 668px;
+    margin: auto;
+    padding: 0px 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  button {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 380px) {
+  [class*='-container'] {
+    max-width: 330px;
+    margin: auto;
+    padding: 0px 25px;
+  }
+}

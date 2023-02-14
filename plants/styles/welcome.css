@@ -1,0 +1,74 @@
+.welcome-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 54px 0px;
+}
+.leaf-big {
+  flex: 0 1 37%;
+}
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 0 1 45%;
+}
+h1 {
+  font-size: 45px;
+  line-height: 1.11; /* 50/45 */
+}
+.welcome-lorem {
+  line-height: 1.75; /* 35/20 */
+}
+.welcome-btn {
+  align-self: start;
+  border-radius: 10px;
+  color: black;
+  border: solid 2px #E06733;
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 1.25; /* 20/16 */
+}
+@media (max-width: 1024px) {
+  .welcome-text {
+    gap: 30px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .welcome-lorem {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .welcome-content {
+    padding: 40px 0px 70px 0px;
+  }
+  .welcome-text {
+    flex: 0 1 60%;
+  }
+  .leaf-big {
+    order: 1;
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 767.98px) {
+  .welcome-content {
+    justify-content: center;
+    padding: 24px 0px;
+  }
+  .welcome-text {
+    flex: 0 1 100%;
+    gap: 20px;
+  }
+  .leaf-big {
+    display: none;
+  }
+  .welcome-btn {
+    font-size: 10px;
+  }
+}
+@media (max-width: 380px) {
+  h1 {
+    font-size: 25px;
+  }
+}

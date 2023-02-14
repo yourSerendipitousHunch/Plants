@@ -1,0 +1,125 @@
+.contacts-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.contacts-headline {
+  font-family: 'Inika';
+  font-size: 40px;
+  line-height: 1.3; /* 52/40 */
+}
+.contacts-woman {
+  display: flex;
+}
+.garden-woman {
+  align-self: flex-end;
+}
+.contacts-dropdown-block-select {
+  margin-top: 90px;
+}
+.contacts-selection-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 395px;
+  height: 50px;
+  padding: 0px 35px 0px 20px;
+  background-color: #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contacts-dropdown-menu-select .contacts-selection-box {
+  border-bottom: 1px solid #D9D9D9;
+}
+.contacts-dropdown-menu-select .contacts-selection-box:hover  {
+  border-bottom: 1px solid #717171;
+}
+.contacts-selection-box.activated {
+  background-color: #C1E698;
+}
+.contacts-btn.activated {
+  transform: rotate(180deg);
+}
+.contacts-dropdown-menu-select {
+  display: none;
+  background-color: #DCE9D9;
+  color: #499A18;
+  font-size: 16px;
+  line-height: 2.50; /* 40/16 */
+  cursor: pointer;
+}
+.contacts-dropdown-menu-select.activated {
+  display: block;
+}
+.contacts-city-selection {
+  line-height: 2; /* 40/20 */
+  letter-spacing: 0.05em;
+}
+.hiden:hover {
+  color: #717171;
+}
+.contacts-btn {
+  background-color: #AEA1A1;
+}
+.contacts-chosed-block {
+  display: none;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 17px 0px 32px 33px;
+  margin-top: 47px;
+}
+.contacts-chosed-block.activated {
+  display: block;
+}
+.contacts-chosed-block-inner {
+  display: flex;
+  gap: 3%;
+}
+.left-side, .right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 2.5; /* 40/16 */
+  letter-spacing: 0.05em;
+}
+.left-side {
+  color: #000000;
+}
+.contacts-btn-call {
+  width: 122px;
+  height: 26px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  color: #717171;
+}
+@media (max-width: 1280px) {
+  .contacts-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+  .contacts-selection-box {
+    margin-top: 0px;
+  }
+  .contacts-woman {
+    order: 1;
+    width: 200px;
+  }
+}
+@media (max-width: 767.98px) {
+  .contacts-content {
+    padding-top: 25px;
+    gap: 80px;
+  }
+  .contacts-headline {
+    font-size: 25px;
+  }
+  .contacts-selection-box {
+    width: 263px;
+    padding: 0px 20px 0px 17px;
+  }
+  .contacts-woman {
+    width: 100px;
+  }
+}

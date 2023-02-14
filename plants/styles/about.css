@@ -1,0 +1,60 @@
+.about-section {
+  background-color: #FFFFFF;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 93px 0px;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 0 1 50%;
+}
+.about-headline {
+  flex: 0 1 77%;
+  font-family: 'Inika';
+  font-size: 40px;
+  line-height: 1.30; /* 52/40 */
+  font-weight: 400;
+}
+.about-lorem {
+  font-size: 20px;
+  line-height: 1.50; /* 30/20 */
+}
+.houseplant {
+  flex: 0 1 38%;
+}
+@media (max-width: 1024px){
+  .about-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about-us {
+    align-items: center;
+  }
+  .about-headline {
+    text-align: center;
+    font-size: 35px;
+  }
+  .houseplant {
+    width: 250px;
+  }
+}
+@media (max-width: 767.98px) {
+  .about-content {
+    padding: 30px 0px;
+    gap: 0px;
+  }
+  .about-headline {
+    font-size: 25px;
+  }
+  .about-lorem {
+    font-size: 16px;
+  }
+  .houseplant {
+    width: 150px;
+  }
+}
